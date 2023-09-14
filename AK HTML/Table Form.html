@@ -1,0 +1,214 @@
+<!-- <html>
+
+<head>
+    <title>My Registration Form</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            background-image: url(data:image/jpeg;base64,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);
+            background-repeat: no-repeat;
+            background-size: 50% 70%;
+        }
+
+        table {
+            position: absolute;
+            left: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <div>
+            <form target="_blank" action="www.google.com" method="post">
+                <h style="color: aquamarine; font-family: 'Times New Roman', Times, serif; text-align: center;">!REGISTRATION!</h>
+                <tr>
+                    <td>
+                        <label for="name1" style="color: aqua;">First Name</label>
+                        <input id="name1" type="text" name="Firstname" placeholder="Enter Your First Name" />
+                    </td>
+                    <td>
+                        <label for="name2" style="color: aqua;">Second Name</label>
+                        <input id="name2" type="text" name="Secondname" placeholder="Enter Your Second Name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email" style="color: aqua;">Email Address</label>
+                        <input id="email" type="email" placeholder="Enter Your Email" />
+                    </td>
+                </tr>
+            </form>
+        </div>
+    </table>
+</body>
+
+</html> -->
+
+<html>
+
+<head>
+    <title>
+        Registration Form
+    </title>
+    <style>
+        .container-fluid {
+            width: 72%;
+            height: 700px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            background-image: url(https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+
+            /* width: 80%;
+            height: auto;
+            background-color: black;
+            display: flex;
+            justify-self: center;
+            justify-content: baseline;
+            align-items: baseline;
+         */
+        }
+
+        .Form {
+            width: 50%;
+            border-style: double;
+            border-inline-color: black;
+            /* padding: 10px;
+            position: absolute;
+            margin-right: 50px;
+            margin-top: 100px;
+            width: 600px; */
+            background-color: skyblue;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container-fluid"> -->
+    <div class="container-fluid">
+        <div class="Form">
+            <form>
+                <table>
+                    <tr style="text-align: center;">
+                        <td colspan="4">
+                            <h1> Registration Form</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fname">First Name</label>
+                        </td>
+                        <td>
+                            <input id="fname" type="text" class="firstname" placeholder="First Name">
+                        </td>
+                        <td><label for="lname">Last Name</label></td>
+                        <td>
+                            <input id="lname" type="text" class="surname" placeholder="Sur Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="emailid">Email</label></td>
+
+                        <td>
+                            <input id="emailid" type="email" class="mailid" placeholder="Enter Email">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td>
+
+                            <input id="pass" type="password" class="Password" maxlength="20"
+                                placeholder="Enter Password">
+                        </td>
+                        <td><label for="cpass">Confirm Password</label></td>
+                        <td>
+
+                            <input id="cpass" type="password" class="Cpass" maxlength="20" placeholder="Enter Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Enter Address</label></td>
+                        <td>
+                            <input id="address" type="text" class="Address" placeholder="Address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="state">Select State</label></td>
+                        <td>
+                            <select id="state">
+                                <option selected>Tap to Select</option>
+                                <option value="KAR">Karnataka</option>
+                                <option value="TL">Tamil Nadu</option>
+                                <option value="KL">Kearala</option>
+                                <option value="MH">Maharashtra</option>
+                                <option value="AP">Andra Pradesh</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    Male<input type="radio" name="Gender" value="M" placeholder="Male">
+                    Female<input type="radio" name="Gender" value="F" placeholder="Female">
+                    Others<input type="radio" name="Gender" value="O" placeholder="Others">
+                </div>
+                <div>
+                    <label for="age">Enter Age</label>
+                    <input id="age" type="number" class="Age" placeholder="Age">
+                </div>
+                <div>
+                    Cricket<input type="checkbox" name="Hobby" value="CRK">
+                    VolleyBall<input type="checkbox" name="Hobby" value="VBL">
+                    Football<input type="checkbox" name="Hobby" value="FBL">
+                </div>
+            </form>
+            <div>
+                <button class="button" onClick="submitted()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <script>
+        function submitted() {
+            let Fname = document.getElementById('fname').value;
+            let Surname = document.getElementsByClassName('surname')[0].value;
+            let email = document.getElementById('emailid').value;
+            let password = document.getElementsByClassName('Password')[0].value;
+            let cpassword = document.getElementsByClassName('Cpass')[0].value;
+            let Address = document.getElementById('address').value;
+            let State = document.getElementById('state').value;
+            let gender = 0;
+            document.getElementsByName('Gender').forEach(el => {
+                if (el.checked) {
+                    gender = el.value;
+                }
+            })
+            let age = document.getElementsByClassName('Age')[0].value;
+            let hobbies = [];
+            document.getElementsByName('Hobby').forEach(ele => {
+                if (ele.checked) {
+                    hobbies.push(ele.value);
+                }
+            })
+            console.log('First name is:', Fname);
+            console.log('Surname is:', Surname);
+            console.log('Email is:', email);
+            console.log('Password is:', password);
+            console.log('Confirmed Password is:', cpassword);
+            console.log('Address is:', Address);
+            console.log('State is:', State);
+            console.log('Gender is:', gender);
+            console.log('Age is:', age);
+            console.log('Hobbies are:', hobbies);
+        }
+    </script>
+</body>
+
+</html>

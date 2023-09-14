@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/****************************Navigation Bar*************************************/
+nav {
+  background-color: #2874f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.plus {
+  color: #ffe500;
+}
+.logo p {
+  font-size: 12px;
+  color: white;
+  margin-top: -5px;
+}
+.search {
+  background-color: white;
+  margin: 0 15px;
+  width: 420px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #2874f0;
+  border-radius: 2px;
+  box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1), 7px 7px 10px rgba(0, 0, 0, 0.1);
+}
+.search input {
+  font-size: 13px;
+  width: 100%;
+  border: none;
+}
+.login {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2874f0;
+  padding: 5px 40px;
+  border: none;
+}
+.Navlink {
+  margin: 0 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+#morebutton {
+  font-size: 10px;
+}
+.catagory {
+  padding: 0 25px;
+  height: 112px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 0 20px;
+}
+/****************************Categories*************************************/
+.catagories {
+  padding: 12px 8px;
+  display: flex;
+  justify-content: center;
+  display: inline;
+}
+.images {
+  display: flex;
+  justify-content: center;
+}
+.catagories img {
+  width: 64x;
+  height: 64px;
+}
+.catagories p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+.catagories p i {
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+.catagories:hover p {
+  color: #2874f0;
+}
+/****************************Slider*************************************/
+.slider {
+  width: 100%;
+  display: flex;
+}
+.sliderimages {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+.sliderimages img {
+  margin: 0;
+  width: 100%;
+  height: 280px;
+}
+.sliderbuttons {
+  position: relative;
+  margin: auto;
+  width: 47px;
+  height: 107px;
+  background-color: rgb(250, 7, 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  border: none;
+  background-color: white;
+/*   padding: 30px 15px; */
+}
+#pbutton{
+  position: relative;
+  border-radius: 0 5px 5px 0;
+}
+#nbutton{
+  position: relative;
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+.sliderbuttons i {
+  font-size: 35px;
+}

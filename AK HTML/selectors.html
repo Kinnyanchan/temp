@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Selectors</title>
+    <style>
+        .container {
+            position: absolute;
+            left: 25%;
+            right: 25%;
+            justify-content: center;
+            background-color: aqua;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Name">
+            <div>
+                <label for="FName">First Name</label>
+                <input id="FName" type="name" name="name" placeholder="Enter First Name" />
+                <br />
+                <label for="SName">Second Name</label>
+                <input id="SName" type="name" name="name" placeholder="Enter Second Name" />
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input id="Email" type="email" name="email" placeholder="Enter Email Id" />
+                <br />
+                <label for="Password">Password</label>
+                <input id="Password" type="password" name="password" placeholder="Enter Email Password" />
+            </div>
+            <div id="HOBBY">
+                Select the Hobby<br />
+                <input id="Hobby" type="checkbox" name="hobby" value="CRK" checked />Cricket
+                <input id="Hobby1" type="checkbox" name="hobby" value="FBL" />Football
+                <input id="Hobby2" type="checkbox" name="hobby" value="VBL" />Volleyball
+            </div>
+            <div>
+                Select the Gender<br />
+                <input id="Gender" class="gender" type="radio" name="gender" value="M" />Male
+                <input id="Gender1" class="gender" type="radio" name="gender" value="F" />Female
+                <input id="Gender2" class="gender" type="radio" name="gender" value="O" />Other
+            </div>
+            <div>
+                <h3>Select the Country</h3>
+                <select id="Country" name="country">
+                    <option selected>Tap to select</option>
+                    <option value="IND">India</option>
+                    <option value="RUS">Russia</option>
+                    <option value="CHN">China</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <button class="button" onClick="console1()">Submit</button>
+        </div>
+    </div>
+    <script>
+        function console1() {
+            let fname = document.getElementById('FName');
+            let sname = document.getElementById('SName').value;
+            let email = document.getElementsByName('email');
+            let password = document.getElementsByName('password')[0].value;
+            let hobbys = [];
+            document.getElementsByName('hobby').forEach(ele => {
+                if (ele.checked) {
+                    hobbys.push(ele.value);
+                }
+            })
+
+            let gender = 0;
+            document.getElementsByName('gender').forEach(ele => {
+                if (ele.checked) {
+                    gender=(ele.value)
+                }
+            })
+
+
+            let country = document.getElementsByName('country')[0].value;
+            console.log('First Name:', fname.value);
+            console.log('Second Name:', sname);
+            console.log('Email ID:', email[0].value);
+            console.log('Email Password:', password);
+            console.log('Hobbies:', hobbys);
+            console.log('Gender:', gender);
+            console.log('Country is:', country);
+        }
+        function bgcolour() {
+
+        }
+    </script>
+</body>
+
+</html>
